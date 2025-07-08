@@ -3,7 +3,7 @@
 library(igraph)
 
 #########################################################################
-#EXEMPLO 1: Importar os arquivos de nÃ³s e links
+#EXEMPLO 1: Importar os arquivos de nós e links
 getwd()
 setwd("D:/WORKSPACES/workspace-vincit/01-INTELIGENCIA_ARTIFICIAL/D003-DATA_CIENCE_R/workshop-posgrad-dataciense-r-rstudio/Arquivos")
 getwd()
@@ -22,7 +22,7 @@ links = links[order(links$from, links$to),]
 colnames(links)[4] = "weight"
 
 #########################################################################
-#EXEMPLO 2: Importar os arquivos de nÃ³s e links
+#EXEMPLO 2: Importar os arquivos de nós e links
 nodes2 = read.csv("Dataset2-Media-User-Example-NODES.csv", header=T, as.is=T)
 links2 = read.csv("Dataset2-Media-User-Example-EDGES.csv", header=T, row.names=1)
 head(nodes2)
